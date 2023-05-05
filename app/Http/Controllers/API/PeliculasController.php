@@ -10,7 +10,7 @@ use App\Models\Pelicula;
 class PeliculasController extends Controller
 {
     public function index(){
-        $peliculas = Pelicula::paginate(2);
+        $peliculas = Pelicula::all();
 
         return $peliculas;
     }
